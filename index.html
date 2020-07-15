@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="logo">
+        <a href="index.html"> <img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="nav-button">
+        <div class="burger lines">
+          <div class="line top"></div>
+          <div class="line middle"></div>
+          <div class="line bottom"></div>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <a href="dashboard.html">
+          <li class="items">Dashboard</li>
+        </a>
+        <a href="faq.html">
+          <li class="items">FAQ</li>
+        </a>
+        <a href="signup.html">
+          <li class="items">Sign up</li>
+        </a>
+        <a href="login.html">
+          <li class="items">Login</li>
+        </a>
+      </ul>
+    </nav>
+    <header id="header">
+      <div class="moon"></div>
+      <div class="container"></div>
+      <div id="svg-container">
+        <svg class="svg1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="degradado">
+              <stop offset="0%" stop-color="#00ffff">
+                <animate
+                  attributeName="stop-color"
+                  values="#0c0e77;#00ffff;#0c0e77;#00ffff48"
+                  dur="10s"
+                  repeatCount="indefinite"
+                ></animate>
+              </stop>
+              <stop offset="50%" stop-color="#00ffff48">
+                <animate
+                  attributeName="stop-color"
+                  values="#00ffff48;#0c0e77;#00ffff;#0c0e77;#00ffff48"
+                  dur="4s"
+                  repeatCount="indefinite"
+                ></animate>
+              </stop>
+
+              <stop offset="100%" stop-color="#0c0e77">
+                <animate
+                  attributeName="stop-color"
+                  values="#00ffff;#0c0e77;#00ffff48;#00ffff;#00ffff48"
+                  dur="10s"
+                  repeatCount="indefinite"
+                ></animate>
+              </stop>
+            </radialGradient>
+            <linearGradient id="degradado2">
+              <stop offset="0%" stop-color="#e40c78" />
+              <stop offset="100%" stop-color="#0c0e77" />
+            </linearGradient>
+          </defs>
+          <symbol id="elipse">
+            <ellipse
+              cx="284.5"
+              cy="283"
+              rx="274.5"
+              ry="273"
+              stroke-width="20"
+              fill="none"
+              stroke="url(#degradado)"
+            />
+            <circle
+              class="cls-2"
+              cx="285"
+              cy="284"
+              r="233"
+              stroke-width="10"
+              fill="none"
+              stroke="url(#degradado)"
+            />
+            <path
+              id="Polygon_1"
+              data-name="Polygon 1"
+              d="M282.545 68.084L464.68 386.239l-365.343-.619z"
+              fill-rule="evenodd"
+              stroke-width="12"
+              fill="none"
+              stroke="url(#degradado)"
+            />
+            <circle
+              class="cls-2"
+              cx="282.5"
+              cy="280.5"
+              r="96.5"
+              stroke-width="10"
+              fill="none"
+              stroke="url(#degradado)"
+            />
+            <path d="M273 90h18v282h-18z" fill="url(#degradado)" />
+          </symbol>
+        </svg>
+        <div class="svg-ctrl">
+          <svg id="svg2" viewbox="0 0 569 566">
+            <use xlink:href="#elipse" />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-main">
+        <div class="main-title">
+          <h1>
+            History
+          </h1>
+        </div>
+        <div class="info-author">
+          <p>
+            Harry Potter is a series of fantasy novels written by British author
+            J. K. Rowling. The novels chronicle the lives of a young wizard,
+            Harry Potter, and his friends Hermione Granger and Ron Weasley, all
+            of whom are students at Hogwarts School of Witchcraft and Wizardry.
+            The main story arc concerns Harry's struggle against Lord Voldemort,
+            a dark wizard who intends to become immortal, overthrow the wizard
+            governing body known as the Ministry of Magic and subjugate all
+            wizards and Muggles (non-magical people).
+          </p>
+        </div>
+        <div class="book-container">
+          <div class="book-card">
+            <div class="imgBox">
+              <img
+                src="./images/sorcerers-stone.jpg"
+                alt="sorcerers stone book cover"
+              />
+            </div>
+            <div class="book-content">
+              <h2>Sorcerer's Stone (1997)</h2>
+              <p>
+                Harry Potter discovers that he is the son of two well-known
+                sorcerers. Attending to a famous school of magic and sorcery, he
+                discovers that a malevolent and powerful magician named
+                Voldemort is in search of a philosopher's stone that extends the
+                life of whoever owns it.
+              </p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="imgBox">
+              <img
+                src="./images/chamber-of-secrets.jpg"
+                alt="chamber of secrets book cover"
+              />
+            </div>
+            <div class="book-content">
+              <h2>Chambers of Secrets (1998)</h2>
+              <p>
+                A series of messages appear on the hallway walls of the Hogwarts
+                school Witchcraft and Wizardry, warning that the "Chamber of
+                Secrets" has been opened and that the "Slytherin heir" would
+                kill all pupils who do not come from all-magical families.
+              </p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="imgBox">
+              <img
+                src="./images/prisoner-of-azkaban.jpg"
+                alt="prisoner-of-azkaban book cover"
+              />
+            </div>
+            <div class="book-content">
+              <h2>Prisoner of Azkaban (1999)</h2>
+              <p>
+                Harry's third year of study at Hogwarts is threatened by Sirius
+                Black's escape from Azkaban prison. Apparently, this is a
+                dangerous magician who was an accomplice of Lord Voldemort and
+                who will try to get revenge on Harry Potter.
+              </p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="imgBox">
+              <img
+                src="./images/goblet-of-fire.jpg"
+                alt="goblet-of-fire book cover"
+              />
+            </div>
+            <div class="book-content">
+              <h2>Goblet of Fire (2000)</h2>
+              <p>
+                Hogwarts prepares for the Triwizard Tournament, in which three
+                wizarding schools will compete. To everyone's surprise, Harry
+                Potter is chosen to participate in the competition, in which he
+                must fight dragons, enter the water and face his greatest fears.
+              </p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="imgBox">
+              <img
+                src="./images/order-of-the-phoenix.jpg"
+                alt="order-of-the-phoenix book cover"
+              />
+            </div>
+            <div class="book-content">
+              <h2>Order of the Phoenix (2003)</h2>
+              <p>
+                In his fifth year at Hogwarts, Harry discovers that many members
+                of the wizarding community do not know the truth about his
+                encounter with Lord Voldemort, so Harry prepares students to
+                defend the school against evil.
+              </p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="imgBox">
+              <img
+                src="./images/half-blood-prince.jpg"
+                alt="half-blood-prince book cover"
+              />
+            </div>
+            <div class="book-content">
+              <h2>Half-Blood Prince (2005)</h2>
+              <p>
+                Lord Voldemort has returned to power, and his wrath has been
+                felt in both the Muggle and Wizarding worlds. Harry discovers a
+                powerful book and collaborates with Dumbledore in the search for
+                a series of magical objects that will help in the destruction of
+                Lord Voldemort.
+              </p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="imgBox">
+              <img
+                src="./images/deathly-hallows.jpg"
+                alt="deathly-hallows book cover"
+              />
+            </div>
+            <div class="book-content">
+              <h2>Deathly Hallows (2007)</h2>
+              <p>
+                Harry, Ron and Hermione leave Hogwarts to start their most
+                important mission: they have to destroy the horcruxes, the
+                secret of Voldemort's power and immortality, in which the feared
+                dark magician keeps the fragments of his soul.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <ul class="links">
+        <a href="https://hp-api.herokuapp.com/" target="_blank">
+          <li>HP-API</li>
+        </a>
+        <a href="https://www.harrypotterfanzone.com/" target="_blank">
+          <li>Harry Potter Fan Zone</li>
+        </a>
+        <a href="https://www.potterapi.com/" target="_blank">
+          <li>Harry Potter API</li>
+        </a>
+        <a
+          href="https://github.com/patricio-bot/Proyecto-MD1-HarryPotter"
+          target="_blank"
+        >
+          <li>&copy;Luckydrawings 2020</li></a
+        >
+      </ul>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
