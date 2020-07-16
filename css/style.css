@@ -17,13 +17,14 @@
   --light-green: #c2d1ca;
   --super-light-green: #8beff0;
   --pure-green-blue: #00ecf0;
-  --dark-green-rgba: #090b0aa1;
+  --dark-green-rgba: rgba(9, 11, 10, 0.631);
   --mid-rgba: rgba(1, 62, 63, 0.267);
   --card-green: #051414;
   --results-bg: #021d1d;
   --results-bg-light: #122a2f;
   --btn-hover: #8fb9af2a;
   --darkest-green-rgba: rgba(9, 11, 10, 0.774);
+  --faq: #01303a;
 }
 
 img {
@@ -1027,6 +1028,105 @@ p {
   margin-top: 3rem;
   padding-top: 1rem;
   text-align: center;
+}
+
+
+/*************************** faq ******************/
+.faq-wrapper {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+}
+
+.faq-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.904),
+      rgba(0, 0, 0, 0.781), rgb(0, 6, 10)), url(../images/faq-bg.jpg);
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.faq-title {
+  color: var(--mid-light-green);
+  background-color: #0233419f;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.faq-title h3 {
+  font-weight: 300;
+}
+
+.faq-card-front img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 4px;
+
+}
+
+.faq-card {
+  background-color: transparent;
+  width: 30rem;
+  height: 30rem;
+  perspective: 1000px;
+  margin: 10rem 2rem;
+
+}
+
+.faq-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.faq-card:hover .faq-card-inner {
+  transform: rotateY(180deg);
+}
+
+.faq-card-front,
+.faq-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+
+.faq-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.faq-card-back {
+  background-color: var(--card-green);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-card-back p {
+  font-size: 2rem;
+  padding: 2rem;
 }
 
 /*********** media queries **********/
