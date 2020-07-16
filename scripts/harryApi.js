@@ -48,7 +48,7 @@ hat.addEventListener('click', function getSchool() {
         })
         .then((school) => {
             let schoolTmp = school;
-            fetch(`http://hp-api.herokuapp.com/api/characters`)
+            fetch(`https://hp-api.herokuapp.com/api/characters`)
                 .then(response => {
                     return response.json();
                 })

@@ -892,6 +892,26 @@ p {
   border-bottom: 3px solid #ff3030;
 }
 
+.message-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+
+.message-container p {
+  background-color: var(--red-color);
+  padding: 20px;
+  margin: 10px 0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #feb1b1;
+}
+
+.message-container p.correct-message {
+  background-color: rgb(47, 164, 93);
+  box-shadow: 0 0 10px #dbf1c1;
+}
+
 /*********** media queries **********/
 @media screen and (min-width: 400px) {
   .imgBox {

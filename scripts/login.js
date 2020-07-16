@@ -59,3 +59,13 @@ class Login {
 const login = new Login();
 
 login.loginButton.addEventListener("click", login.submit);
+
+let reset = document.querySelector('#reset');
+
+
+
+reset.addEventListener('click', function borrar() {
+    window.location.reload(true);
+    form.reset();
+
+});
