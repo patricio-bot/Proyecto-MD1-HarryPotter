@@ -63,7 +63,7 @@ login.loginButton.addEventListener("click", login.submit);
 let reset = document.querySelector('#reset');
 
 
-
+let form = document.querySelector('.form');
 reset.addEventListener('click', function borrar() {
     window.location.reload(true);
     form.reset();

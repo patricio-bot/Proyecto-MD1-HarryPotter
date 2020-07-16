@@ -7,13 +7,14 @@ class Signup {
         this.characterInput = document.querySelector("#character");
         this.bookInput = document.querySelector("#book");
         this.emailInput = document.querySelector("#email");
-        this.passwordInput = document.querySelector("#password");
-        this.repeatPasswordInput = document.querySelector("#repeat-password");
+        this.passwordInput = document.getElementById("password");
+        this.repeatPasswordInput = document.getElementById("repeat-password");
 
         this.buttonInput = document.querySelector("#signup-button");
         this.errorsWrapper = document.querySelector(".message-container");
 
     }
+
 
 
     // gestionar cambios del input "email"
@@ -38,6 +39,7 @@ class Signup {
     // gestionar cambios del input "password"
     handlePasswordInput = (event) => {
         const password = event.target.value;
+        console.log(event.target.value);
         const passwordRepeat = this.repeatPasswordInput.value;
 
 
@@ -79,15 +81,6 @@ class Signup {
         db.saveNewUser(newUser);
 
 
-
-        // vaciar el form
-        this.nameInput.value = "";
-        this.characterInput.value = "";
-        this.bookInput.value = "";
-        this.emailInput.value = "";
-        this.passwordInput.value = "";
-        this.repeatPasswordInput.value = "";
-
         this.showSuccessMessage();
         this.removeMessages();
     }
@@ -115,10 +108,51 @@ class Signup {
             return;
         }
 
-        const successMessageP = document.createElement('p');
-        successMessageP.innerHTML = "La cuenta ha sido creada con exito";
 
-        this.errorsWrapper.appendChild(successMessageP);
+
+
+
+
+
+        const name = this.nameInput.value;
+        const character = this.characterInput.value;
+        const book = this.bookInput.value;
+        const email = this.emailInput.value;
+
+
+        var popup = document.querySelector(".popup-wrapper");
+        var popupTextName = document.querySelector(".popup-text > p:nth-child(1)");
+        var popupTextCharacter = document.querySelector(".popup-text > p:nth-child(2)");
+        var popupTextEmail = document.querySelector(".popup-text > p:nth-child(3)");
+        var popupTextBook = document.querySelector(".popup-text > p:nth-child(4)");
+        var popupTextEnd = document.querySelector('.popup-text > p:nth-child(5)');
+        var popupClose = document.querySelector(".popup-close");
+
+        var dataName = `Name: ${name}`;
+
+        var dataCharacter = `Character: ${character}`;
+        var dataBook = `Book: ${book}`;
+        var dataEmail = `Email: ${email}`;
+
+
+
+
+        popup.style.display = 'block';
+        popupTextName.innerHTML = dataName;
+        popupTextCharacter.innerHTML = dataCharacter;
+        popupTextEmail.innerHTML = dataEmail;
+        popupTextBook.innerHTML = dataBook;
+        popupTextEnd.innerHTML = `${name}, save the planet, kill yourself`;
+
+        popupClose.addEventListener('click', () => {
+            popup.style.display = 'none';
+            this.nameInput.value = "";
+            this.characterInput.value = "";
+            this.bookInput.value = "";
+            this.emailInput.value = "";
+            this.passwordInput.value = "";
+            this.repeatPasswordInput.value = "";
+        });
 
     }
 
@@ -152,10 +186,11 @@ class Signup {
 const signup = new Signup();
 
 window.addEventListener("load", signup.addListeners);
+
 let reset = document.querySelector('#reset');
 
 
-
+let form = document.querySelector('.form');
 reset.addEventListener('click', function borrar() {
     window.location.reload(true);
     form.reset();
