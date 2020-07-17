@@ -900,8 +900,11 @@ p {
 }
 
 .message-container p.correct-message {
-  background-color: rgb(47, 164, 93);
+  background-color: rgba(4, 62, 71, 0.233);
   box-shadow: 0 0 10px #000a0e;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.438);
+  border: 1px solid var(--super-light-green);
 }
 
 /************************** popupform **************/
@@ -1066,6 +1069,7 @@ p {
   height: 30rem;
   perspective: 1000px;
   margin: 10rem 2rem;
+  cursor: pointer;
 }
 
 .faq-card-inner {
