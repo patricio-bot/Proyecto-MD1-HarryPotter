@@ -548,7 +548,7 @@ p {
 
 .hat {
   margin-top: 8rem;
-  width: 80%;
+  max-width: 32rem;
   background-image: url(../images/bghat.jpg);
   background-size: cover;
   display: flex;
@@ -556,10 +556,6 @@ p {
   align-items: center;
   border-radius: 1rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
-}
-
-.hat img {
-  width: 90%;
 }
 
 .hat img:hover {
@@ -1243,10 +1239,6 @@ p {
 
   .main-title-dashboard {
     padding-top: 80rem;
-  }
-
-  .hat {
-    width: 50%;
   }
 
   .form-group:last-child {
