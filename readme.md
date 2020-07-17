@@ -4,21 +4,26 @@
 
 Using two APIS on Harry Potter, recreate the operation of Sorting Hat, showing the user the corresponding house by draw
 
-### MVP
+## MVP
 
 ### Backlog
 
+1. Create a private section for the user.
+2. Implement a card game.
+
 ### Wireframes
 
-### Data structure
+[Prototype](https://www.figma.com/proto/fgnPotnTueXg4mgXxCWRvS/Potter?node-id=1%3A4&scaling=scale-down)
+
+## Data structure
 
 ### APIs
 
-1. https://www.potterapi.com/
-2. https://hp-api.herokuapp.com/
+1. [Potter Api](https://www.potterapi.com/)
+2. [Potter Heroku Api](https://hp-api.herokuapp.com/)
 
 ### Links
 
-https://trello.com/b/6c0eqBGU/proyecto-m1
+[Trello](https://trello.com/b/6c0eqBGU/proyecto-m1)
 
-https://patricio-bot.github.io/Proyecto-MD1-HarryPotter/
+[Deploy](https://patricio-bot.github.io/Proyecto-MD1-HarryPotter/)

@@ -1021,7 +1021,7 @@ p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 10rem;
+  padding-top: 6rem;
 }
 
 .faq-container {
